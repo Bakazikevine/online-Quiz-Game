@@ -16,7 +16,6 @@ const quizQuestions=[
     },
 ];
 
-// Function to display a random quiz question
 function displayQuestion() {
     const questionIndex= Math.floor(Math.random() * quizQuestions.length);
     const correctAnswer = quizQuestions[questionIndex];
@@ -40,7 +39,6 @@ function displayQuestion() {
     }
 }
 
-// Function to run the quiz
 function AnswerQuestions() {
     let score = 0;
     for (let i = 0; i < quizQuestions.length; i++) {
@@ -49,5 +47,4 @@ function AnswerQuestions() {
     console.log("Quiz completed! Your final score is:", score, "out of", quizQuestions.length);
 }
 
-// Start the quiz
-AnswerQuestions(1,3,4);
+AnswerQuestions();
